@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch src/server.js"
+    "dev": "node --watch src/server.js",
+    "start":"node --watch src/server.js"
   },
   "keywords": [],
-  "type":"module",
+  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
@@ -16,6 +17,7 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.1"
+    "mongoose": "^8.19.1",
+    "realtime": "file:.."
   }
 }
