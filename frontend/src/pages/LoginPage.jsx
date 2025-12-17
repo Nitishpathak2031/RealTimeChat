@@ -27,10 +27,10 @@ function LoginPage() {
                 </div>
 
                 {/* FORM */}
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6 text-white">
                   {/* EMAIL INPUT */}
-                  <div>
-                    <label className="auth-input-label">Email</label>
+                  <div className="my-8 ">
+                    <label className="auth-input-label ">Email</label>
                     <div className="relative">
                       <MailIcon className="auth-input-icon" />
 
@@ -70,7 +70,7 @@ function LoginPage() {
                   </button>
                 </form>
 
-                <div className="mt-6 text-center">
+                <div className="mt-6 text-white text-center">
                   <Link to="/signup" className="auth-link">
                     Don't have an account? Sign Up
                   </Link>
@@ -89,7 +89,7 @@ function LoginPage() {
                 <div className="mt-6 text-center">
                   <h3 className="text-xl font-medium text-cyan-400">Connect anytime, anywhere</h3>
 
-                  <div className="mt-4 flex justify-center gap-4">
+                  <div className="mt-4 flex text-white justify-center gap-4">
                     <span className="auth-badge">Free</span>
                     <span className="auth-badge">Easy Setup</span>
                     <span className="auth-badge">Private</span>

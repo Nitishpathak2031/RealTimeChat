@@ -30,8 +30,8 @@ function SignUpPage() {
                 {/* FORM */}
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* FULL NAME */}
-                  <div>
-                    <label className="auth-input-label">Full Name</label>
+                  <div className="text-white">
+                    <label className="auth-input-label text-white">Full Name</label>
                     <div className="relative">
                       <UserIcon className="auth-input-icon" />
 
@@ -39,7 +39,7 @@ function SignUpPage() {
                         type="text"
                         value={formData.fullname}
                         onChange={(e) => setFormData({ ...formData, fullname: e.target.value })}
-                        className="input"
+                        className="input text-white border-2 border-amber-50"
                         placeholder="John Doe"
                       />
                     </div>
@@ -47,22 +47,22 @@ function SignUpPage() {
 
                   {/* EMAIL INPUT */}
                   <div>
-                    <label className="auth-input-label">Email</label>
+                    <label className="auth-input-label text-white">Email</label>
                     <div className="relative">
-                      <MailIcon className="auth-input-icon" />
+                      <MailIcon className="auth-input-icon text-white" />
 
                       <input
                         type="email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="input"
+                        className="input text-white"
                         placeholder="johndoe@gmail.com"
                       />
                     </div>
                   </div>
 
                   {/* PASSWORD INPUT */}
-                  <div>
+                  <div className="text-white">
                     <label className="auth-input-label">Password</label>
                     <div className="relative">
                       <LockIcon className="auth-input-icon" />
@@ -78,7 +78,7 @@ function SignUpPage() {
                   </div>
 
                   {/* SUBMIT BUTTON */}
-                  <button className="auth-btn" type="submit" disabled={isSigningUp}>
+                  <button className="auth-btn text-white" type="submit" disabled={isSigningUp}>
                     {isSigningUp ? (
                       <LoaderIcon className="w-full h-5 animate-spin text-center" />
                     ) : (
@@ -87,7 +87,7 @@ function SignUpPage() {
                   </button>
                 </form>
 
-                <div className="mt-6 text-center">
+                <div className="mt-6 text-center text-white">
                   <Link to="/login" className="auth-link">
                     Already have an account? Login
                   </Link>
@@ -106,7 +106,7 @@ function SignUpPage() {
                 <div className="mt-6 text-center">
                   <h3 className="text-xl font-medium text-cyan-400">Start Your Journey Today</h3>
 
-                  <div className="mt-4 flex justify-center gap-4">
+                  <div className="mt-4 flex text-white justify-center gap-4">
                     <span className="auth-badge">Free</span>
                     <span className="auth-badge">Easy Setup</span>
                     <span className="auth-badge">Private</span>
