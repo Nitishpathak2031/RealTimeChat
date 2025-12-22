@@ -88,4 +88,9 @@ export const useChatStore = create((set, get) => ({
     const { selectedUser, isSoundEnabled } = get();
     if (!selectedUser) return;
   },
+
+  unsubscribeFromMessages: () => {
+    const socket = useAuthStore.getState().socket;
+    socket.off("newMessage");
+  }
 }));

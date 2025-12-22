@@ -20,5 +20,8 @@
     "url": "https://github.com/Nitishpathak2031/RealTimeChat/issues"
   },
   "homepage": "https://github.com/Nitishpathak2031/RealTimeChat#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "daisyui": "^5.5.14"
+  }
 }
