@@ -7,7 +7,9 @@ import path from "path"
 import { connectdb } from "./lib/db.js"
 import cookieParser from "cookie-parser"
 import cors from "cors"
-const app = express();
+import { app,server } from "./lib/socket.js"
+
+
 
 const __dirname = path.resolve();
 
@@ -32,7 +34,7 @@ if(process.env.NODE_ENV == "production"){
     })
 }
 
-app.listen(port, () =>{
+server.listen(port, () =>{
     console.log(`server is running on port ${port}`)
     connectdb()
 })
